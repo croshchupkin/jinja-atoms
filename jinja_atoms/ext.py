@@ -24,7 +24,7 @@ class JinjaAtomsExtension(Extension):
     tags = set(['atom'])
 
     ATOMS_NS_RE = re.compile(
-        r'\{\%\s*use\s+atoms\s*\'?(?P<tmpl>[^\s]+)\'?\s*as\s*\'?(?P<context>\w+)\'?\s*\%\}',
+        r'\{\%\s*use\s+atoms\s+\'?(?P<tmpl>[^\s]+)\'?\s+as\s+\'?(?P<context>\w+)\'?\s*\%\}',
     )
 
     def preprocess(self, source, name, filename=None):
